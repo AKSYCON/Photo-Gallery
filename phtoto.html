@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photostyle.css">
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <div class="contanier">
+        <div class="heading">
+            <h3>Arham Kalam <span>Gallery</span></h3>
+        </div>
+        <div class="box">
+            <div class="dream">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/22.jpg" alt="">
+                <img src="img/10.jpg" alt="">
+                <img src="img/11.jpg" alt="">
+                <img src="img/12.jpg" alt="">
+                <img src="img/13.jpg" alt="">
+            </div>
+            <div class="dream">
+                <img src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+                <img src="img/10.jpg" alt="">
+                <img src="img/11.jpg" alt="">
+                <img src="img/12.jpg" alt="">
+                <img src="img/13.jpg" alt="">
+                <img src="img/14.jpg" alt="">
+                <img src="img/3.jpg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/17.jpg" alt="">
+            </div>
+            <div class="dream">
+                <img src="img/15.jpg" alt="">
+                <img src="img/16.jpg" alt="">
+                <img src="img/17.jpg" alt="">
+                <img src="img/18.jpg" alt="">
+                <img src="img/19.jpg" alt="">
+                <img src="img/20.jpg" alt="">
+                <img src="img/21.jpg" alt="">
+                <img src="img/15.jpg" alt="">
+                <img src="img/16.jpg" alt="">
+                <img src="img/13.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="btn">
+            <a href="#">More</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+        document.addEventListener("mousemove",(e)=>{
+            let x = e.pageX;
+            let y = e.pageY;
+            cursor.style.top = y + 'px';
+            cursor.style.left = x + 'px';
+            cursor.style.display = 'block';
+
+        function mouseStopped() {
+            cursor.style.display = 'none';     
+        }
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped,4000);
+        });
+        document.addEventListener("mouseout",()=>{
+            cursor.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

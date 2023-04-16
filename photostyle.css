@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+.contanier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px 20px 0 20px;
+}
+.contanier .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+.contanier .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    color: #700dbb;
+    border-bottom: 3px solid #8f22e3;
+}
+.contanier .heading h3 span{
+    font-weight: 100;
+}
+.contanier .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contanier .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.contanier .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contanier .box .dream img:hover{
+    opacity: 0.7;
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+.contanier .btn{
+    margin: 40px 0 70px 0;
+    background: #8f22e3c8;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.btn:hover{
+    background: #a561da8d;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width:1005px) {
+    .contanier .heading{
+        width: 60%;
+    }
+    .contanier .heading h3{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width:769px) {
+    .contanier .box{
+        flex-direction: column;
+    }
+    .contanier .box .dream{
+        width: 100%;
+    }
+}
+@media screen and (max-width:705px) {
+    .contanier .heading{
+        width: 70%;
+    }
+    .contanier .heading h3{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:500px) {
+    .contanier .heading{
+        width: 75%;
+    }
+    .contanier .heading h3{
+        font-size: 1.4em;
+    }
+}
